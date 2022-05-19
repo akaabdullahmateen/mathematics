@@ -1,1 +1,1 @@
-Discrete is a high performance library to solve a vast subset of mathematical problems
+Discrete is a mathematical library that involves probability, linear algebra, matrixes, and calculus.
