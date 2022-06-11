@@ -1,6 +1,7 @@
 *~
 *.autosave
 *.a
+*.s
 *.core
 *.moc
 *.o
@@ -101,3 +102,6 @@ Thumbs.db
 *.exe
 *.out
 *.app
+
+# Test files
+test.cpp
