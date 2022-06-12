@@ -48,7 +48,7 @@
 
 Therefore, the moves, T<sub>n</sub> required for moving all the n discs from peg A to peg B under the given rules must be less than or equal to the moves required for the given procedure; that is:
 
-T<sub>n</sub> <= 3T<sub>n-1</sub> + 2	(2.1)
+T<sub>n</sub> <= 3T<sub>n-1</sub> + 2&nbsp;&nbsp;&nbsp;&nbsp;(2.1)
 
 - Initially, when all discs are stacked on peg A, we must move the top n-1 discs (ultimately) to the middle peg or peg B. If we end up moving all these n-1 discs to the middle peg, then the largest disc (disc n) needs to be moved directly to peg B - which is forbidden. Therefore, we must move the top n-1 discs to peg B. We already have found the most optimal solution to do that; it takes T<sub>n-1</sub> moves
 - Now the largest disc must be moved to the middle peg
@@ -58,12 +58,12 @@ T<sub>n</sub> <= 3T<sub>n-1</sub> + 2	(2.1)
 
 This is the least amount of moves possible, therefore:
 
-T<sub>n</sub> >= 3T<sub>n-1</sub> + 2	(2.2)
+T<sub>n</sub> >= 3T<sub>n-1</sub> + 2&nbsp;&nbsp;&nbsp;&nbsp;(2.2)
 
 These two inequalities, together with the trivial solution yields:
 
 T<sub>0</sub> = 0
-T<sub>n</sub> = 3T<sub>n-1</sub> + 2	(2.3)
+T<sub>n</sub> = 3T<sub>n-1</sub> + 2&nbsp;&nbsp;&nbsp;&nbsp;(2.3)
 
 ## Closed form
 
