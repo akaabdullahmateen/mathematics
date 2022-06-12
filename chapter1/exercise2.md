@@ -2,11 +2,15 @@
 
 **Find the shortest sequence of moves that transfers a tower of `n` disks from the left peg `A` to the right peg `B`, if direct moves between `A` and `B` are disallowed. (Each move must be to or from the middle peg. As usual, a larger disk must never appear above a smaller one.)**
 
-## Basis
+## Trivial solutions
 
 - T<sub>0</sub> = 0
 - T<sub>1</sub> = 2
 - T<sub>2</sub> = 8
+
+## Boundary value
+
+- T<sub>0</sub> = 0
 
 ## Recurrence
 
@@ -61,3 +65,16 @@ These two inequalities, together with the trivial solution yields:
 T<sub>0</sub> = 0
 T<sub>n</sub> = 3T<sub>n-1</sub> + 2	(2.3)
 
+## Closed form
+
+|    **n**    |  0  |  1  |  2  |  3  |  4  |  5  |
+|:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **T<sub>n** |  0  |  2  |  8  | 26  | 80  | 242 |
+
+T<sub>n</sub> = 3<sup>n</sup> - 1
+
+## Proof by induction
+
+T<sub>n<sub> = 3T<sub>n-1</sub> + 2
+T<sub>n<sub> = 3(3<sup>n-1</sup> - 1) + 2
+T<sub>n<sub> = 3<sup>n</sup> - 1
