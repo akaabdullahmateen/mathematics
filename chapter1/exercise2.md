@@ -1,6 +1,6 @@
 # Exercise 2
 
-**Find the shortest sequence of moves that transfers a tower of `n` disks from the left peg `A` to the right peg `B`, if direct moves between `A` and `B` are disallowed. (Each move must be to or from the middle peg. As usual, a larger disk must never appear above a smaller one.)**
+**Find the shortest sequence of moves that transfers a tower of n disks from the left peg A to the right peg B, if direct moves between A and B are disallowed. (Each move must be to or from the middle peg. As usual, a larger disk must never appear above a smaller one.)**
 
 ## Trivial solutions
 
@@ -40,7 +40,7 @@
 ----|----  ----|----  ----|----
 ```
 
-- We know how to transfer the smaller stack on top of the largest disc from peg A to peg B; this takes T<sub>n-1<sub> moves
+- We know how to transfer the smaller stack on top of the largest disc from peg A to peg B; this takes T<sub>n-1</sub> moves
 - Now the largest disc is moved to the middle peg
 - The smaller discs stack from peg B is moved back to peg A, taking anther T<sub>n-1</sub> moves
 - The largest disc is moved to peg B
@@ -75,6 +75,6 @@ T<sub>n</sub> = 3<sup>n</sup> - 1
 
 ## Proof by induction
 
-T<sub>n<sub> = 3T<sub>n-1</sub> + 2
-T<sub>n<sub> = 3(3<sup>n-1</sup> - 1) + 2
-T<sub>n<sub> = 3<sup>n</sup> - 1
+T<sub>n</sub> = 3T<sub>n-1</sub> + 2
+T<sub>n</sub> = 3(3<sup>n-1</sup> - 1) + 2
+T<sub>n</sub> = 3<sup>n</sup> - 1
